@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- start writing your code -->
+    <div class="main">
+        <div class="introSection">
+            <h1 class="introTitle">Eventually</h1>
+            <p class="introDesc">A simple template for telling the world when you launch your next big thing. Brought to
+                you by HTML5 UP.</p>
+            <form action="">
+                <input type="email" name="email" placeholder="Email Address">
+                <input type="submit" value="Sign Up" id="submit">
+                <span id="thankYouMessage"></span>
+            </form>
+
+            <div class="socials">
+                <ul class="socialIcons">
+                    <li><img src="/assets/images/icons/twitter.png"  ></li>
+                    <li><img src="/assets/images/icons/insta.png"  ></li>
+                    <li><img src="/assets/images/icons/github.png"  ></li>
+                    <li><img src="/assets/images/icons/email.png"  ></li>
+
+                </ul>
+                <div class="socialsCopy">
+                    <span>&copy;Untitled. </span>
+                    <span>Credits: Unsplash + HMTL5. UP</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+document.getElementById("submit").addEventListener("click", ()=>{
+    document.getElementById("thankYouMessage").innerHTML="Thank you!"
+});
+
+    </script>
+</body>
+
+</html>
